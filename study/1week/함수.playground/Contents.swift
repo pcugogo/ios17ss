@@ -69,3 +69,16 @@ func Version(language:String, version:Double) -> String{
 
 Version(language: "swift", version: 3.0)
 
+let numA: Int = 5
+let numB: Int = 10
+
+func addTwoNum(firstNumb num1: Int, secondNumb num2: Int) -> Int{
+    return num1 + num2
+}
+
+var result: Int = addTwoNum(firstNumb: numA, secondNumb: numB)
+
+func square(of number: Int) -> Int{
+    return number * number
+}
+var result2: Int square(of: 4)
