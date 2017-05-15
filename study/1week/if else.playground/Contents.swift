@@ -57,10 +57,51 @@ mTicketPrice(startTime: 1, adultCount: 1, teenagerCount: 1)
 //지폐별 갯수
 //금액을 입력받고 100원, 500원, 1,000원, 5,000원, 10,000원, 50,000원권으로 각각 몇 장씩 나눠지는지 프린트
 
+//func countChanges(Received money:UInt) -> (count50000Won:UInt, count10000Won:UInt, count5000Won:UInt, count1000Won:UInt, count500Won:UInt, count100Won:UInt) {
+//    var remainMoney = money
+//    
+//   
+//    var count50000Won:UInt = 0
+//    var count10000Won:UInt = 0
+//    var count5000Won:UInt = 0
+//    var count1000Won:UInt = 0
+//    var count500Won:UInt = 0
+//    var count100Won:UInt = 0
+//    
+//    if remainMoney >= 50000 {
+//        count50000Won = remainMoney / 50000
+//        remainMoney = remainMoney % 50000
+//    }
+//    if remainMoney >= 10000 {
+//        count10000Won = remainMoney / 10000
+//        remainMoney = remainMoney % 10000
+//    }
+//    if remainMoney >= 5000 {
+//        count5000Won = remainMoney / 5000
+//        remainMoney = remainMoney % 5000
+//    }
+//    if remainMoney >= 1000 {
+//        count1000Won = remainMoney / 1000
+//        remainMoney = remainMoney % 1000
+//    }
+//    if remainMoney >= 500 {
+//        count500Won = remainMoney / 500
+//        remainMoney = remainMoney % 500
+//    }
+//    if remainMoney >= 100 {
+//        count100Won = remainMoney / 100
+//        remainMoney = remainMoney % 100
+//    }
+//    
+//    return (count50000Won, count10000Won, count5000Won, count1000Won, count500Won, count100Won)
+//    
+//}
+
+//countChanges(Received: 15500)
+
 func countChanges(Received money:UInt) -> (count50000Won:UInt, count10000Won:UInt, count5000Won:UInt, count1000Won:UInt, count500Won:UInt, count100Won:UInt) {
     var remainMoney = money
     
-   
     var count50000Won:UInt = 0
     var count10000Won:UInt = 0
     var count5000Won:UInt = 0
@@ -69,36 +110,32 @@ func countChanges(Received money:UInt) -> (count50000Won:UInt, count10000Won:UIn
     var count100Won:UInt = 0
     
     if remainMoney >= 50000 {
-        count50000Won = remainMoney / 50000
-        remainMoney = remainMoney % 50000
+        count50000Won = remainMoney / 50000        //카운트오만원에 머니값 / 5만을 담아준다
+        remainMoney = remainMoney % 50000          //들어온 값을 50000으로 나눠 나머지를 구한다 나머지를 다시 리메인에 담아
+    }                                              //밑으로 가게 한다
+    if remainMoney >= 10000{                       //여기서 5만으로 나누고 남은 숫자를
+        count10000Won = remainMoney / 10000        //만으로 남아 카운트에 담아주고
+        remainMoney = remainMoney % 10000          //10000으로 나눠 나머지 값을 구하고 리메인에 담아 밑으로 보내준다
     }
-    if remainMoney >= 10000 {
-        count10000Won = remainMoney / 10000
-        remainMoney = remainMoney % 10000
-    }
-    if remainMoney >= 5000 {
+    if remainMoney >= 5000{
         count5000Won = remainMoney / 5000
         remainMoney = remainMoney % 5000
     }
-    if remainMoney >= 1000 {
+    if remainMoney >= 1000{
         count1000Won = remainMoney / 1000
         remainMoney = remainMoney % 1000
     }
-    if remainMoney >= 500 {
+    if remainMoney >= 500{
         count500Won = remainMoney / 500
         remainMoney = remainMoney % 500
     }
-    if remainMoney >= 100 {
+    if remainMoney >= 100{
         count100Won = remainMoney / 100
         remainMoney = remainMoney % 100
     }
-    
     return (count50000Won, count10000Won, count5000Won, count1000Won, count500Won, count100Won)
-    
 }
-
 countChanges(Received: 15500)
-
 // 5. 윤년구하기
 //서력 기원 연수가 4로 나누어떨어지는 해는 윤년으로 한다.(2004년, 2008년, 2012년, 2016년, 2020년, 2024년 …)
 //이 중에서 100으로 나누어떨어지는 해는 평년으로 한다.(1900년, 2100년, 2200년, 2300년, 2500년 …)
