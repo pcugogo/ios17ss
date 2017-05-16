@@ -8,9 +8,9 @@
 
 import UIKit
 ///클래스
-class ViewController: UIViewController {
+class ViewController: UIViewController { //여기가 셀프 이안에 다 있기때문
     //아웃렛
-    @IBOutlet weak var displayLabel: UILabel!  //레이블이랑 연결된 곳인데, self가 여기 인것 같다 밑에 self.displayLabel.text가 여기서 나오는 것 같다
+    @IBOutlet weak var displayLabel: UILabel!
     
     //MARK: - 변수들 프로퍼티
     var tempFirstNum:Int = 0    //첫번째 누르는 번호
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     
     //첫번째 숫자인지, 두번째 숫자(연산 버튼을 누른 다음 누르는 숫자)인지 판단해서 각각에 저장하는 함수
-    func addFirstNumOrSecondNum(number num:String) {
+    func addFirstNumOrSecondNum() {
         if tempOperation.isEmpty {
             //아직 첫번째 숫자
             tempFirstNum = Int(displayLabel.text!)!  //! 값이 있다고 한것 첫번쨰 찍었다
@@ -32,180 +32,39 @@ class ViewController: UIViewController {
         }
         
     }
-    
-    
+//    //디스플레이에 "0"이 맨 앞자리에 있는지 판단해서 displayNumber에 숫자를 저장하는 함수
+//    func addDisplayNumber(num:String) {
+//        let num = ""
+//        switch displayNumber {
+//        case "0":
+//            displayNumber = num
+//        default:
+//            displayNumber += num
+//        }
+//    }
+    func addDisplayNumber(_ numberString: String){
+        switch displayNumber {
+        case "0":
+            displayNumber = numberString
+        default:
+            displayNumber += numberString
+        }
+    }
     
     //숫자 버튼들
     
-    @IBAction func clickBtn1(_ sender: UIButton) {
+    @IBAction func numberButtonTouched(_ sender: UIButton) {
+        print("\(sender.currentTitle!)번버튼이 클릭되었음")
         
-        if displayNumber == "0"{   //디스플레이에 있는 숫자가 0이면
-            displayNumber = "1"     //디스플레이 숫자를 1로 해주고
-        }else{                      //그렇지 않으면
-            displayNumber += "1"   // 1을 그 숫자(스트링)에 붙여준다
-        }
-        
-        if tempOperation.isEmpty {  //임시작업 변수에 비우는 언어를 붙인거같다 먼지 잘모르겠다
-        
-            tempFirstNum = Int(displayNumber)! // !는 닐값이 아니라고 표시해주는것 이것도 잘모르겠다
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber //디스플레이 레이블에 디스플레이 넘버 찍어줘라
-        print("1버튼이 클릭되었음")
-    }
-    @IBAction func clickBtn2(_ sender:
-        UIButton){
-        
-        if displayNumber == "0"{
-            displayNumber = "2"
-        }else{
-            displayNumber += "2"
-        }
-        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("2버튼이 클릭되었음")
-    }
-    @IBAction func clickBtn3(_ sender:
-        UIButton){
-        if displayNumber == "0"{
-            displayNumber = "3"
-        }else{
-            displayNumber += "3"
-        }
-        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("3버튼이 클릭되었음")
-    }
-    @IBAction func clickBtn4(_ sender:
-        UIButton){
-        if displayNumber == "0"{
-            displayNumber = "4"
-        }else{
-            displayNumber += "4"
-        }
-        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("4버튼이 클릭되었음")
-    }
-    @IBAction func clickBtn5(_ sender:
-        UIButton){
-        if displayNumber == "0"{
-            displayNumber = "5"
-        }else{
-            displayNumber += "5"
-        }
-        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("5버튼이 클릭되었음")
-    }
-    @IBAction func clickBtn6(_ sender:
-        UIButton){
-        if displayNumber == "0"{
-            displayNumber = "6"
-        }else{
-            displayNumber += "6"
-        }
        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("6버튼이 클릭되었음")
-    }
-    @IBAction func clickBtn7(_ sender:
-        UIButton){
-        if displayNumber == "0"{
-            displayNumber = "7"
-        }else{
-            displayNumber += "7"
-        }
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("7버튼이 클릭되었음")
+        addDisplayNumber(sender.currentTitle!)
+//        addDisplayNumber((sender.titleLabel?.text!)!) 위랑 아래 둘중 하나만 쓰면된다
+        addFirstNumOrSecondNum()
+        
+        self.displayLabel.text = displayNumber //디스플레이 레이블에 디스플레이 넘버 찍어줘라
         
     }
-    @IBAction func clickBtn8(_ sender:
-        UIButton){
-        if displayNumber == "0"{
-            displayNumber = "8"
-        }else{
-            displayNumber += "8"
-        }
-        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-    }
-    @IBAction func clickBtn9(_ sender:
-        UIButton){
-        if displayNumber == "0"{
-            displayNumber = "9"
-        }else{
-            displayNumber += "9"
-        }
-        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("9버튼이 클릭되었음")
-    }
-    @IBAction func clickBtn0(_ sender:UIButton){
-        if displayNumber == "0"{
-            displayNumber = "0"
-        }else{
-            displayNumber += "0"
-        }
-        
-        if tempOperation.isEmpty {
-            
-            tempFirstNum = Int(displayNumber)!
-        }else{
-            tempSecondNum = Int(displayNumber)!
-        }
-        self.displayLabel.text = displayNumber
-        print("0버튼이 클릭되었음")
-    }
+   
  
     // = 버튼 복습
     @IBAction func touchUpInsideResultBtn(_ sender: UIButton) {
@@ -232,29 +91,35 @@ class ViewController: UIViewController {
         print("=버튼이 눌렸습니다")
     }
     
+    ///기호를 넣어주고 기호라벨을 업데이트합니다.
+    func updateTempOperation(_ operation:String){
+        tempOperation = operation
+        displayNumber = "0"
+        displayLabel.text = tempOperation
+    }
     
-    //플러스 버튼
+    
+    //연산 버튼
     @IBAction func tocheUpInsidePlusBtn(_ sender:UIButton) {
-        tempOperation = "+"    //템프오퍼레이션은 위 =함수의 스위치 이름이다 케이스에 값을 주기 위해이다
+
+        var operation:String = sender.currentTitle!
         
+        switch  operation {
+        case "X":
+            updateTempOperation("*")
+       
+        default:
+            updateTempOperation(operation)
+           
+        }
+        
+        
+        
+        tempOperation = "0"    //템프오퍼레이션은 위 =함수의 스위치 이름이다 케이스에 값을 주기 위해이다
         displayNumber = "0"
+        
     }
-    //빼기버튼
-    @IBAction func tocheUpInsideMinus(_ sender:UIButton) {
-        tempOperation = "-"
-        displayNumber = "0"
-    }
-   //곱하기버튼
-    @IBAction func tocheUpInsideMultiply(_ sender: UIButton) {
-        tempOperation = "*"
-        displayNumber = "0"
-    }
-    //나누기버튼
-    
-    @IBAction func tocheUpInsideDivision(_ sender: UIButton) {
-        tempOperation = "/"
-        displayNumber = "0"
-    }
+   
     
    //초기화 버튼 복습
     @IBAction func ClearBtn(_ sender: UIButton) {
@@ -283,7 +148,7 @@ class ViewController: UIViewController {
     }
     
     
-  
+
 
     //더하기 함수
     func plus(firstNum:Int, secondNum:Int) -> Int{
