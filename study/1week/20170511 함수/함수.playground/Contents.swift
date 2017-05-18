@@ -81,4 +81,4 @@ var result: Int = addTwoNum(firstNumb: numA, secondNumb: numB)
 func square(of number: Int) -> Int{
     return number * number
 }
-var result2: Int square(of: 4)
+var result2:Int = square(of: 4)
