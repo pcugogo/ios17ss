@@ -36,22 +36,26 @@ class Subject{
 
 class Studunt{
     var name:String
-    var average:Int
-    var subject:String
+    var average:Int?
+    var subject:String?
     
     init(name:String){
         self.name = name
     }
+    
     func addSubject(subjectName name:String, score:Int){
         
-        if subjects == nil{
-            subjects = []
-        }
-        let sj:Subject = Subject(name: name, score: score)
+        
+        
     }
     
 }
 
 class ScoreManager{
-    func average(forStudunt studunt:String) -> Double
+    func average(forStudunt studunt:String) -> Double {
+        
+        return 0.0
+    }
 }
+
+
