@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
    
-        
-    var robotName:String = ""
-    var robotInfo:String = ""
-    var robotPrice:Int = 0
-    var robotStock:Int = 0      //숫자 옆에 재고 수를 표시해줘도 좋겠다 그리고 재고 추가도 좋겠다
-    var deposit:Int = 0
-    var numberPurchased:Int = 0
+    //로봇 객체 만들어보자
+    var robotName:String = ""  //로봇이름
+    var robotInfo:String = ""  //로봇정보
+    var robotPrice:Int = 0     //로봇 가격
+    var robotStock:Int = 0     //로봇재고 숫자 옆에 재고 수를 표시해줘도 좋겠다 그리고 재고 추가도 좋겠다
+    var deposit:Int = 0        //입금받은 금액
+    var numberPurchased:Int = 0 // 구매한 갯수
     
     @IBOutlet weak var depositTextField: UITextField!
     @IBOutlet weak var resultTextField: UITextView!
@@ -33,8 +33,10 @@ class ViewController: UIViewController {
     
     //1.입금텍스트필드에 돈을 쓰고 입금을 누르면 돈이 입금되어서 결과텍스트에 입금된 금액을 띄워준다
     
-    
-    
+/************************************************************/
+//                  버튼액션                                //
+/************************************************************/
+//MARK:- 이렇게하면 위에서 찾을 수 있다
     
     @IBAction func optimusPickAction(_ sender: UIButton) {
         robotName = "옵티머스프라임"
