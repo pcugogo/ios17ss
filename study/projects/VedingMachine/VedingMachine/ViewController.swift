@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var robotName:String = ""
     var robotInfo:String = ""
     var robotPrice:Int = 0
-    var robotStock:Int = 0
+    var robotStock:Int = 0      //숫자 옆에 재고 수를 표시해줘도 좋겠다 그리고 재고 추가도 좋겠다
     var deposit:Int = 0
     var numberPurchased:Int = 0
     
@@ -38,6 +38,7 @@ class ViewController: UIViewController {
     
     @IBAction func optimusPickAction(_ sender: UIButton) {
         robotName = "옵티머스프라임"
+        
         robotPrice = 100000000
         robotInfo = "대형차로 변신이 가능합니다. (3대 한정모델)"
         robotStock = 3
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
         
     }
     @IBAction func ironPickAction(_ sender: UIButton) {
-        robotName = "아이언맨"
+        robotName = "아이언슈트"
         robotPrice = 10000000
         robotInfo = "착용이 가능합니다. (7대 한정모델)"
         robotStock = 7
