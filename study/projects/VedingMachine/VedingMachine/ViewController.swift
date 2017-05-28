@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
    
     //로봇 객체 만들어보자
     var robotName:String = ""  //로봇이름
@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        depositTextField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -115,6 +116,17 @@ class ViewController: UIViewController {
         robotPrice = 0
         robotInfo = ""
         self.resultTextField.text = ""
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //리턴누르면 입금되게 할 수 있다
+//        depositTextField.resignFirstResponder()
+//        resultTextField.resignFirstResponder()
+        textField.resignFirstResponder()
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }

@@ -123,6 +123,7 @@ class ViewController: UIViewController {                     //숫자를 '입력
         strikes = 0
         balls = 0
         outs = 0
+        
         inputNumber.removeAll()
         initNumber()
        
