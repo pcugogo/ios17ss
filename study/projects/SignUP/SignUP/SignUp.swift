@@ -8,12 +8,11 @@
 
 import Foundation
 
-class SignUP {
+class SignUp {
+    var usersList = [UsersInformation]()
     
-    var usersInfo = [UsersInformation]()
-    
-    func addUser(userObject:UsersInformation){
-        usersInfo += [userObject]
+    func addUser(_ userObject:UsersInformation){
+        usersList += [userObject]
     }
 
     

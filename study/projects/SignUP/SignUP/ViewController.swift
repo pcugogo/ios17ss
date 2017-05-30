@@ -9,15 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
+
     
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signUpIdTextField: UITextField!
-    @IBOutlet weak var signUpPassTextField: UITextField!
-    @IBOutlet weak var signUpNickTextField: UITextField!
     @IBOutlet weak var idNoticeLabel: UILabel!
     @IBOutlet weak var passwordNoticeLabel: UILabel!
-    @IBOutlet weak var welcomeLogin: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +53,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func loginButton(_ sender: UIButton) {
+        
         if idTextField.text == "" && passwordTextField.text == "" {
             idNoticeLabel.text = "아이디를 확인해주세요"
             passwordNoticeLabel.text = "비밀번호를 확인해주세요"
@@ -67,10 +66,25 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }else{
             idNoticeLabel.text = ""
             passwordNoticeLabel.text = ""
+            
         }
     }
-    @IBAction func signUpButtonAction(_ sender: UIButton) {
-    }
     
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if identifier == "loginSeg"{
+//                if idTextField.text == "" || passwordTextField.text == "" {
+//                 return false
+//                }else{
+//                    return true
+//            }
+//        }
+//        return true
+//    }
+        
+//    @IBAction func back(unwindSegue:UIStoryboardSegue){
+//        
+//    }
+//   
+
 }
 
