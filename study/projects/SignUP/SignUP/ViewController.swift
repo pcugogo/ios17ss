@@ -9,13 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
-
+    
+    
     
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var idNoticeLabel: UILabel!
     @IBOutlet weak var passwordNoticeLabel: UILabel!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +34,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
             idTextField.text = ""
             idTextField.becomeFirstResponder()
         }else if passwordTextField.text == "" {
-             passwordTextField.text = ""
-             passwordTextField.becomeFirstResponder()
+            passwordTextField.text = ""
+            passwordTextField.becomeFirstResponder()
         }else{
             switch textField.tag {
             case 1:
@@ -43,9 +44,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 passwordTextField.resignFirstResponder()
             default:
                 textField.resignFirstResponder()
+            }
         }
-    }
-
+        
         return true
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -53,7 +54,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func loginButton(_ sender: UIButton) {
-        
+        loginRequest()
         if idTextField.text == "" && passwordTextField.text == "" {
             idNoticeLabel.text = "아이디를 확인해주세요"
             passwordNoticeLabel.text = "비밀번호를 확인해주세요"
@@ -70,21 +71,39 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-//        if identifier == "loginSeg"{
-//                if idTextField.text == "" || passwordTextField.text == "" {
-//                 return false
-//                }else{
-//                    return true
-//            }
-//        }
-//        return true
-//    }
-        
-//    @IBAction func back(unwindSegue:UIStoryboardSegue){
-//        
-//    }
-//   
-
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        var loginCheck = true
+        if identifier == "loginSeg"{
+            if idTextField.text == "" || passwordTextField.text == "" {
+                loginCheck = false
+            }else{
+                loginCheck = true
+            }
+        }
+        return loginCheck
+    }
+    
+    @IBAction func back(unwindSegue:UIStoryboardSegue){ //지금은 안쓰고 있고 그냥 세그 show로 연결해줬다
+        //back(함수명)이나 unwindSegue(파라미터)명은 상관없다 타입에 UIStoryboardSegue만 잘해주면 된다
+        //돌아갈뷰에 액션을 걸어준다 메인스토리보드에서 돌아가기전 뷰에서 돌아가는 버튼을 끌고 상단의 exit에 연결해주면 된다
+    }
+   
+    func loginRequest() {
+        if !(self.idTextField.text?.isEmpty)!
+            && !(self.passwordTextField.text?.isEmpty)!{
+            if self.idTextField.text! == UserDefaults.standard.string(forKey: Authentification.email) && self.passwordTextField.text! == UserDefaults.standard.string(forKey: Authentification.password){
+                print("로그인 성공")
+                UserDefaults.standard.set(true, forKey: Authentification.authentificationBool)
+            }else{
+                print("실패")
+            }
+        }
+    }
+    
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        let loginId:LoginViewController = segue.destination as! LoginViewController
+    //        loginId.loginIdText = idTextField.text!
+    //    }
+    
 }
 

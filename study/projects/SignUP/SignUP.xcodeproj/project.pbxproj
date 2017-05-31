@@ -19,8 +19,10 @@
 		14696A781EDAEA6F00F05E17 /* UsersInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14696A771EDAEA6F00F05E17 /* UsersInformation.swift */; };
 		14696A7A1EDAECA400F05E17 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14696A791EDAECA400F05E17 /* SignUp.swift */; };
 		14D9E6F61EDBB21C002E31D0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9E6F51EDBB21C002E31D0 /* DetailViewController.swift */; };
-		14D9E6F81EDBB827002E31D0 /* SignComplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9E6F71EDBB827002E31D0 /* SignComplateVC.swift */; };
 		14DBC5911EDDA0BE00E02BB6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBC5901EDDA0BE00E02BB6 /* LoginViewController.swift */; };
+		14DBC5B91EDE61FC00E02BB6 /* pineapple-1455590_960_720.png in Resources */ = {isa = PBXBuildFile; fileRef = 14DBC5B81EDE61FC00E02BB6 /* pineapple-1455590_960_720.png */; };
+		14DBC5BF1EDE942200E02BB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBC5BE1EDE942200E02BB6 /* Constants.swift */; };
+		14DBC5C11EDEA45E00E02BB6 /* iconmonstr-arrow-68.png in Resources */ = {isa = PBXBuildFile; fileRef = 14DBC5C01EDEA45E00E02BB6 /* iconmonstr-arrow-68.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +40,10 @@
 		14696A771EDAEA6F00F05E17 /* UsersInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInformation.swift; sourceTree = "<group>"; };
 		14696A791EDAECA400F05E17 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		14D9E6F51EDBB21C002E31D0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		14D9E6F71EDBB827002E31D0 /* SignComplateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignComplateVC.swift; sourceTree = "<group>"; };
 		14DBC5901EDDA0BE00E02BB6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		14DBC5B81EDE61FC00E02BB6 /* pineapple-1455590_960_720.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pineapple-1455590_960_720.png"; sourceTree = "<group>"; };
+		14DBC5BE1EDE942200E02BB6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		14DBC5C01EDEA45E00E02BB6 /* iconmonstr-arrow-68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-arrow-68.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +79,11 @@
 				14696A5D1EDACF8E00F05E17 /* AppDelegate.swift */,
 				14696A5F1EDACF8E00F05E17 /* ViewController.swift */,
 				14D9E6F51EDBB21C002E31D0 /* DetailViewController.swift */,
-				14D9E6F71EDBB827002E31D0 /* SignComplateVC.swift */,
 				14696A611EDACF8E00F05E17 /* Main.storyboard */,
 				14DBC5901EDDA0BE00E02BB6 /* LoginViewController.swift */,
+				14DBC5B81EDE61FC00E02BB6 /* pineapple-1455590_960_720.png */,
 				14696A6F1EDAD02F00F05E17 /* login.png */,
+				14DBC5C01EDEA45E00E02BB6 /* iconmonstr-arrow-68.png */,
 				14696A701EDAD02F00F05E17 /* password.png */,
 				14696A711EDAD02F00F05E17 /* pineapple.png */,
 				14696A751EDAD83C00F05E17 /* mail.png */,
@@ -87,6 +92,7 @@
 				14696A691EDACF8E00F05E17 /* Info.plist */,
 				14696A771EDAEA6F00F05E17 /* UsersInformation.swift */,
 				14696A791EDAECA400F05E17 /* SignUp.swift */,
+				14DBC5BE1EDE942200E02BB6 /* Constants.swift */,
 			);
 			path = SignUP;
 			sourceTree = "<group>";
@@ -151,11 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14696A681EDACF8E00F05E17 /* LaunchScreen.storyboard in Resources */,
+				14DBC5C11EDEA45E00E02BB6 /* iconmonstr-arrow-68.png in Resources */,
 				14696A721EDAD02F00F05E17 /* login.png in Resources */,
 				14696A741EDAD02F00F05E17 /* pineapple.png in Resources */,
 				14696A731EDAD02F00F05E17 /* password.png in Resources */,
 				14696A651EDACF8E00F05E17 /* Assets.xcassets in Resources */,
 				14696A631EDACF8E00F05E17 /* Main.storyboard in Resources */,
+				14DBC5B91EDE61FC00E02BB6 /* pineapple-1455590_960_720.png in Resources */,
 				14696A761EDAD83C00F05E17 /* mail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,9 +178,9 @@
 				14DBC5911EDDA0BE00E02BB6 /* LoginViewController.swift in Sources */,
 				14696A601EDACF8E00F05E17 /* ViewController.swift in Sources */,
 				14696A7A1EDAECA400F05E17 /* SignUp.swift in Sources */,
+				14DBC5BF1EDE942200E02BB6 /* Constants.swift in Sources */,
 				14696A781EDAEA6F00F05E17 /* UsersInformation.swift in Sources */,
 				14D9E6F61EDBB21C002E31D0 /* DetailViewController.swift in Sources */,
-				14D9E6F81EDBB827002E31D0 /* SignComplateVC.swift in Sources */,
 				14696A5E1EDACF8E00F05E17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

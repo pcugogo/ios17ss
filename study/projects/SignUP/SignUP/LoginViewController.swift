@@ -9,18 +9,30 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    
+    var loginIdText = ""
+    let usersID:String = UserDefaults.standard.string(forKey: "NickName")!
+    @IBOutlet weak var loginWelcomeLb: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        let userID = usersID
+        loginWelcomeLb.text = "\(userID)님 안녕하세요"
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
+    override func viewDidAppear(_ animated: Bool) {
+        let isAuthentified: Bool = UserDefaults.standard.bool(forKey: Authentification.authentificationBool)
+        super.viewDidAppear(animated)
+        if !isAuthentified {
+            self.performSegue(withIdentifier: "LoginViewSeg", sender: self)
+        }
+    }
+//    @IBAction func unwindToMain(_ segue:UIStoryboardSegue){
+//    }
 
     /*
     // MARK: - Navigation
