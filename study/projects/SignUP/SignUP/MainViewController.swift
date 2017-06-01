@@ -11,8 +11,8 @@ import UIKit
 class MainViewController: UIViewController {
     
     
-    var loginIdText = ""
-    let usersID:String = UserDefaults.standard.string(forKey: "NickName")!
+//    var loginIdText = ""
+//    let usersID:String = UserDefaults.standard.string(forKey: "NickName")!
     
     
     @IBOutlet weak var petImgView: UIImageView!
@@ -20,8 +20,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userID = usersID
-        loginWelcomeLb.text = "\(userID)님 안녕하세요"
+//        let userID = usersID
+//        loginWelcomeLb.text = "\(userID)님 안녕하세요"
         
         let petImages = [UIImage(named:"9.jpg")!,
                          UIImage(named:"5.jpg")!,
@@ -40,12 +40,17 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewDidAppear(_ animated: Bool) {
-        let isAuthentified: Bool = UserDefaults.standard.bool(forKey: Authentification.authentificationBool)
-        super.viewDidAppear(animated)
-        if !isAuthentified {
-            self.performSegue(withIdentifier: "LoginViewSeg", sender: self)
-        }
+//    override func viewDidAppear(_ animated: Bool) {
+//        let isAuthentified: Bool = UserDefaults.standard.bool(forKey: Authentification.authentificationBool)
+//        super.viewDidAppear(animated)
+//        if !isAuthentified {
+//            self.performSegue(withIdentifier: "LoginViewSeg", sender: self)
+//        
+//        }
+//    }
+    @IBAction func logOutActionBtn(_ sender: UIButton) {
+//        let byLoginView:MainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//        self.present(byMain, animated: true, completion: nil)
     }
 //    @IBAction func unwindToMain(_ segue:UIStoryboardSegue){
 //    }

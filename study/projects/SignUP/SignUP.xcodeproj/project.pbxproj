@@ -18,7 +18,8 @@
 		14696A761EDAD83C00F05E17 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 14696A751EDAD83C00F05E17 /* mail.png */; };
 		14696A781EDAEA6F00F05E17 /* UsersInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14696A771EDAEA6F00F05E17 /* UsersInformation.swift */; };
 		14696A7A1EDAECA400F05E17 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14696A791EDAECA400F05E17 /* SignUp.swift */; };
-		14D9E6F61EDBB21C002E31D0 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9E6F51EDBB21C002E31D0 /* SingUpViewController.swift */; };
+		1469B1451EDFFC76006D5149 /* Navi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1469B1441EDFFC76006D5149 /* Navi.swift */; };
+		14D9E6F61EDBB21C002E31D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D9E6F51EDBB21C002E31D0 /* SignUpViewController.swift */; };
 		14DBC5911EDDA0BE00E02BB6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBC5901EDDA0BE00E02BB6 /* MainViewController.swift */; };
 		14DBC5BF1EDE942200E02BB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBC5BE1EDE942200E02BB6 /* Constants.swift */; };
 		14DBC5C11EDEA45E00E02BB6 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 14DBC5C01EDEA45E00E02BB6 /* Back.png */; };
@@ -46,7 +47,8 @@
 		14696A751EDAD83C00F05E17 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		14696A771EDAEA6F00F05E17 /* UsersInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInformation.swift; sourceTree = "<group>"; };
 		14696A791EDAECA400F05E17 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
-		14D9E6F51EDBB21C002E31D0 /* SingUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		1469B1441EDFFC76006D5149 /* Navi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navi.swift; sourceTree = "<group>"; };
+		14D9E6F51EDBB21C002E31D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		14DBC5901EDDA0BE00E02BB6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		14DBC5BE1EDE942200E02BB6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		14DBC5C01EDEA45E00E02BB6 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
@@ -93,8 +95,9 @@
 				14DBC5E81EDEFEC800E02BB6 /* Image */,
 				14696A5D1EDACF8E00F05E17 /* AppDelegate.swift */,
 				14696A5F1EDACF8E00F05E17 /* LoginViewController.swift */,
-				14D9E6F51EDBB21C002E31D0 /* SingUpViewController.swift */,
+				14D9E6F51EDBB21C002E31D0 /* SignUpViewController.swift */,
 				14696A611EDACF8E00F05E17 /* Main.storyboard */,
+				1469B1441EDFFC76006D5149 /* Navi.swift */,
 				14DBC5901EDDA0BE00E02BB6 /* MainViewController.swift */,
 				14696A641EDACF8E00F05E17 /* Assets.xcassets */,
 				14696A661EDACF8E00F05E17 /* LaunchScreen.storyboard */,
@@ -214,9 +217,10 @@
 				14DBC5911EDDA0BE00E02BB6 /* MainViewController.swift in Sources */,
 				14696A601EDACF8E00F05E17 /* LoginViewController.swift in Sources */,
 				14696A7A1EDAECA400F05E17 /* SignUp.swift in Sources */,
+				1469B1451EDFFC76006D5149 /* Navi.swift in Sources */,
 				14DBC5BF1EDE942200E02BB6 /* Constants.swift in Sources */,
 				14696A781EDAEA6F00F05E17 /* UsersInformation.swift in Sources */,
-				14D9E6F61EDBB21C002E31D0 /* SingUpViewController.swift in Sources */,
+				14D9E6F61EDBB21C002E31D0 /* SignUpViewController.swift in Sources */,
 				14696A5E1EDACF8E00F05E17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
