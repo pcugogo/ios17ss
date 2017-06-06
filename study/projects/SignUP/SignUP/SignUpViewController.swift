@@ -77,7 +77,17 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
 //        }
 //        return signUpCheck
 //    }
+    //    func signUpRequest() {
+    //    var user:[String:Any] = [:]
+    //    user.updateValue(email.textField.text!, forket: 어센티피케이션.email)
+    //    user.updateValue(nickName.textField.text!, forket: 어센티피케이션.nickName)
+    //    user.updateValue(password.textField.text!, forket: 어센티피케이션.password)
+    //    var userList:[Any] = UserDefaults.standard.array(forKey: "UserList") ??[] // ?? 닐콜레이싱오퍼레이션
+    //nil -coalescing
     
+    //    userList.append(user)
+    //    userDefaults.standard.set(userList, forkey:"UserList")
+    //    }
     func signUpRequst(){
         if !(signIdTextField.text?.isEmpty)! && !(signPassTextField.text?.isEmpty)! && !(signNickTextField.text?.isEmpty)! && signPassTextField.text! == passConfirmTextField.text!{
             UserDefaults.standard.set(signIdTextField.text!, forKey: Authentification.email)

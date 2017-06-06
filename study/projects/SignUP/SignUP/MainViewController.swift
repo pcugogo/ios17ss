@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
     
     
 //    var loginIdText = ""
-//    let usersID:String = UserDefaults.standard.string(forKey: "NickName")!
+//    let usersID:String = UserDefaults.standard.string(forKey: "NickName") ?? "없는 아이디"
     
     
     @IBOutlet weak var petImgView: UIImageView!

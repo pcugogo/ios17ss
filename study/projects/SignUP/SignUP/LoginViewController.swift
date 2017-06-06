@@ -82,7 +82,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func signUpActionBtn(_ sender: UIButton) {
-        loginRequest()
+//        loginRequest()
 //        let bySignUp:SignUpViewController = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
 //        self.present(bySignUp, animated: true, completion: nil)
     }
@@ -106,10 +106,25 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     func loginRequest() {
         if !(self.idTextField.text?.isEmpty)!
             && !(self.passwordTextField.text?.isEmpty)!{
+            //            let userList:[[String:Any]] = UserDefaults.standard.array(forKey: "UserList") as ! [[String:Any]]
+            //
+            //user = [String:Any]
+            //            for user in userList
+            //            {
+            //                let userEmail = user[Authentification.email]!
+            //                  if idTextField.text! == userEmail{
+            //                  let pw:Stirng = user[Authentification.password]!
+            //                  if self.passwordTextField.text! == pw{
+            //           UserDefaults.standard.set(true, forKey: Authentification.auth) //자동 로그인용
+            //            self.dismiss(animated: true, completion: nil)
+            //        }
+            //        }
+            
+            //            }
             if self.idTextField.text! == UserDefaults.standard.string(forKey: Authentification.email) && self.passwordTextField.text! == UserDefaults.standard.string(forKey: Authentification.password){
                 print("로그인 성공")
                 UserDefaults.standard.set(true, forKey: Authentification.authentificationBool)
-                self.navigationController?.dismiss(animated: true, completion: nil)
+                self.navigationController?.dismiss(animated: true, completion: nil) //로그인 성공시 메인으로
 //                let byMain:MainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
 //                self.present(byMain, animated: true, completion: nil)
             }else{
