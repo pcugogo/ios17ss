@@ -123,14 +123,15 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             //            }
             if self.idTextField.text! == UserDefaults.standard.string(forKey: Authentification.email) && self.passwordTextField.text! == UserDefaults.standard.string(forKey: Authentification.password){
                 print("로그인 성공")
+                
                 UserDefaults.standard.set(true, forKey: Authentification.authentificationBool)
                 self.navigationController?.dismiss(animated: true, completion: nil) //로그인 성공시 메인으로
-//                let byMain:MainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-//                self.present(byMain, animated: true, completion: nil)
+                //                let byMain:MainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                //                self.present(byMain, animated: true, completion: nil)
             }else{
                 let alert:UIAlertController = UIAlertController(title: "이것이알럿", message: "로그인실패", preferredStyle: .alert)
-                let okBt:UIAlertAction = UIAlertAction(title: "알았슈", style:UIAlertActionStyle.cancel, handler: nil) 
-                    alert.addAction(okBt)
+                let okBt:UIAlertAction = UIAlertAction(title: "알았슈", style:UIAlertActionStyle.cancel, handler: nil)
+                alert.addAction(okBt)
                 self.present(alert, animated: true, completion:nil)
                 print("실패")
             }
