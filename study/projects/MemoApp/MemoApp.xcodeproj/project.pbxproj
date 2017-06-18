@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1489D6B71EF2D9B100881476 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1489D6B61EF2D9B100881476 /* LoginViewController.swift */; };
 		14D7E5A61EEC2E4E0032035A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7E5A51EEC2E4E0032035A /* AppDelegate.swift */; };
 		14D7E5AD1EEC2E4E0032035A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D7E5AC1EEC2E4E0032035A /* Assets.xcassets */; };
 		14D7E5B01EEC2E4E0032035A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7E5AE1EEC2E4E0032035A /* LaunchScreen.storyboard */; };
@@ -15,7 +16,6 @@
 		14D7E5BD1EEC31800032035A /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D7E5B91EEC31800032035A /* Back.png */; };
 		14D7E5BE1EEC31800032035A /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 14D7E5BA1EEC31800032035A /* password.png */; };
 		14D7E5C71EEC36420032035A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7E5C61EEC36420032035A /* Main.storyboard */; };
-		14D7E5C91EEC368D0032035A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7E5C81EEC368D0032035A /* LoginViewController.swift */; };
 		14D7E5CB1EEC36A90032035A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7E5CA1EEC36A90032035A /* SignUpViewController.swift */; };
 		14D7E5CD1EEC3D050032035A /* MemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7E5CC1EEC3D050032035A /* MemoTableViewController.swift */; };
 		14D7E5CF1EEC3E7C0032035A /* MemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7E5CE1EEC3E7C0032035A /* MemoDetailViewController.swift */; };
@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1489D6B61EF2D9B100881476 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		14D7E5A21EEC2E4E0032035A /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D7E5A51EEC2E4E0032035A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D7E5AC1EEC2E4E0032035A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		14D7E5B91EEC31800032035A /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
 		14D7E5BA1EEC31800032035A /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 		14D7E5C61EEC36420032035A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		14D7E5C81EEC368D0032035A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		14D7E5CA1EEC36A90032035A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		14D7E5CC1EEC3D050032035A /* MemoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoTableViewController.swift; sourceTree = "<group>"; };
 		14D7E5CE1EEC3E7C0032035A /* MemoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoDetailViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				14D7E5A51EEC2E4E0032035A /* AppDelegate.swift */,
-				14D7E5C81EEC368D0032035A /* LoginViewController.swift */,
+				1489D6B61EF2D9B100881476 /* LoginViewController.swift */,
 				14D7E5CA1EEC36A90032035A /* SignUpViewController.swift */,
 				14D7E5CC1EEC3D050032035A /* MemoTableViewController.swift */,
 				14D7E5CE1EEC3E7C0032035A /* MemoDetailViewController.swift */,
@@ -164,11 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1489D6B71EF2D9B100881476 /* LoginViewController.swift in Sources */,
 				14D7E5CF1EEC3E7C0032035A /* MemoDetailViewController.swift in Sources */,
 				14D7E5CB1EEC36A90032035A /* SignUpViewController.swift in Sources */,
 				14D7E5D11EEC40A50032035A /* Defaults.swift in Sources */,
 				14D7E5CD1EEC3D050032035A /* MemoTableViewController.swift in Sources */,
-				14D7E5C91EEC368D0032035A /* LoginViewController.swift in Sources */,
 				14D7E5A61EEC2E4E0032035A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +323,7 @@
 				14D7E5B61EEC2E4E0032035A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
