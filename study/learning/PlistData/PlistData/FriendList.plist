@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>list</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>산토끼</string>
+			<key>age</key>
+			<string>777</string>
+			<key>address</key>
+			<string>앞산</string>
+			<key>phone_number</key>
+			<string>10105</string>
+			<key>img_url</key>
+			<string>image1</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>집토끼</string>
+			<key>age</key>
+			<string>778</string>
+			<key>address</key>
+			<string>뒷산</string>
+			<key>phone_number</key>
+			<string>10107</string>
+			<key>img_url</key>
+			<string>image2</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>달토끼</string>
+			<key>age</key>
+			<string>777</string>
+			<key>address</key>
+			<string>달</string>
+			<key>phone_number</key>
+			<string>10105</string>
+			<key>img_url</key>
+			<string>image3</string>
+		</dict>
+        <dict>
+            <key>name</key>
+            <string>흰토끼</string>
+            <key>age</key>
+            <string>770</string>
+            <key>address</key>
+            <string>해변</string>
+            <key>phone_number</key>
+            <string>10105</string>
+            <key>img_url</key>
+            <string>image4</string>
+        </dict>
+	</array>
+	<key>version</key>
+	<string>1.0</string>
+</dict>
+</plist>

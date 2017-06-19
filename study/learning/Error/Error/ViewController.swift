@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         function2()
         SampleClass.typeMethod()
 //        SampleClass.instanceMethod()
+        SampleClass.typeMethodToOvverride()
+       
     }
 
     override func didReceiveMemoryWarning() {

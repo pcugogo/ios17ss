@@ -27,16 +27,17 @@ class MemoDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   private func saveMode(){
+    func saveMode(){
         let memo:[String:String] =  ["Title":titleTextField.text!, "Content":contentTextField.text!]
         var memoList:[Any] = UserDefaults.standard.array(forKey: "MemoList") ?? []
         
         memoList.insert(memo, at: 0)
         
-        UserDefaults.standard.set(memoList, forKey: "memoList")
+        UserDefaults.standard.set(memoList, forKey: "MemoList")
+        print(UserDefaults.standard.array(forKey: "MemoList"))
         print("저장완료")
     }
-    private func editMode() {
+    func editMode() {
         
         let memo: [String: String] = ["Title": titleTextField.text!, "Content": contentTextField.text!]
         var memoList: [[String: String]] = UserDefaults.standard.array(forKey: "MemoList") as! [[String : String]]

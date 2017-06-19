@@ -19,6 +19,7 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
         MainTableView.delegate = self
         MainTableView.dataSource = self
         
+        print(UserDefaults.standard.dictionary(forKey: "Title"))
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -77,8 +78,9 @@ class MainViewController: UIViewController,UITableViewDataSource,UITableViewDele
         guard let Data = UserDefaults.standard.array(forKey: "MemoList") as? [[String:String]] else {
             return print("데이터가 없습니다")
         }
-        
+        print(UserDefaults.standard.array(forKey: "MemoList"))
         memoData = Data
+        
         
     }
     
