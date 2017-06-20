@@ -19,15 +19,25 @@ class ViewController: UIViewController {
 //        let bundle = Bundle.main
 //        let path = bundle.path(forResource: "FriendList", ofType: "plist")
         
-        if let realPath = Bundle.main.path(forResource: "FriendList", ofType: "plist"), //번들에 있는 피리스트 불러오기
-            let dic = NSDictionary(contentsOfFile: realPath) as? [String:AnyObject]{
-           
-          print(dic["list"] ?? "")
-                
-            
-        }else{
-            //파일이 존재하지 않습니다.
-        }
+        
+//        if let realPath = Bundle.main.path(forResource: "FriendList", ofType: "plist"), //번들에 있는 피리스트 불러오기
+//            let dic = NSDictionary(contentsOfFile: realPath) as? [String:AnyObject]{
+//           
+//          print(dic["list"] ?? "")
+//                
+//            
+//        }else{
+//            //파일이 존재하지 않습니다.
+//        }
+        
+//        let data = TestData.standard.object(forKey: "list") as! [Any]
+        
+//        for person in data{
+//            let personDic = person as! [String:Any]
+//            let name = personDic["name"] as! String
+//            let age = personDic["age"] as! String
+//            let address = personDic["address"] as! String
+//        }
     }
 
     

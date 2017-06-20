@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SectionTitle</key>
+		<string>통신 설정</string>
+		<key>Data</key>
+		<array>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingSwitchCell</string>
+				<key>Content</key>
+				<string>에어플레인 모드</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingBasicCell</string>
+				<key>Content</key>
+				<string>Wi-Fi</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingBasicCell</string>
+				<key>Content</key>
+				<string>Bluetooth</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetalCell</string>
+				<key>Content</key>
+				<string>셀룰러</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingBasicCell</string>
+				<key>Content</key>
+				<string>개인용 핫스팟</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingBasicCell</string>
+				<key>Content</key>
+				<string>네트워크 사업자</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionTitle</key>
+		<string>알림 설정</string>
+		<key>Data</key>
+		<array>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>알림</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>제어센터</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>방해금지 모드</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>SectionTitle</key>
+		<string>일반 설정</string>
+		<key>Data</key>
+		<array>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>일반</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>디스플레이 및 밝기</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>배경화면</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>사운드</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>Siri</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>Touch ID 암호</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>배터리</string>
+			</dict>
+			<dict>
+				<key>CellStyle</key>
+				<string>SettingDetailCell</string>
+				<key>Content</key>
+				<string>개인 정보 보호</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

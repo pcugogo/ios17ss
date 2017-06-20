@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142ACC7E1EF8C3810025FCB3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142ACC7D1EF8C3810025FCB3 /* Person.swift */; };
 		14F37D7F1EF76FD100D6ACDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F37D7E1EF76FD100D6ACDB /* AppDelegate.swift */; };
 		14F37D811EF76FD100D6ACDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F37D801EF76FD100D6ACDB /* ViewController.swift */; };
 		14F37D841EF76FD100D6ACDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F37D821EF76FD100D6ACDB /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		142ACC7D1EF8C3810025FCB3 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		14F37D7B1EF76FD100D6ACDB /* PlistData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlistData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F37D7E1EF76FD100D6ACDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F37D801EF76FD100D6ACDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				14F37D7E1EF76FD100D6ACDB /* AppDelegate.swift */,
 				14F37D801EF76FD100D6ACDB /* ViewController.swift */,
 				14F37DB21EF7A64000D6ACDB /* FriendData.swift */,
+				142ACC7D1EF8C3810025FCB3 /* Person.swift */,
 				14F37DB41EF7B64A00D6ACDB /* FriendDataStudy.swift */,
 				14F37DB81EF7E2FF00D6ACDB /* TestData.swift */,
 				14F37D821EF76FD100D6ACDB /* Main.storyboard */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142ACC7E1EF8C3810025FCB3 /* Person.swift in Sources */,
 				14F37D811EF76FD100D6ACDB /* ViewController.swift in Sources */,
 				14F37DB31EF7A64000D6ACDB /* FriendData.swift in Sources */,
 				14F37D7F1EF76FD100D6ACDB /* AppDelegate.swift in Sources */,

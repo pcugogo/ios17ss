@@ -9,6 +9,8 @@
 import Foundation
 
 class TestData{
+
+    
     private static var instance:TestData = TestData()
     class var standard:TestData{
         return instance
@@ -16,10 +18,35 @@ class TestData{
     private var dic:[String:Any]?
     private var realPath = ""
     
+    func object(forKey defaultName: String) -> Any? {
+        return nil
+    }
+    
+    func set(_ value: Any?, forKey defaultName: String) {
+        
+    }
+    
+    func removeObject(forKey defaultName: String) {
+        
+    }
+    
+    private init() {
+                load()
+    }
+    
+    deinit {
+                save()
+    }
+    
+
+    
+    
     
     func load(){
         let peth = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         realPath = peth[0] + "/testList.plist"
+        
+
         
         let fileManager = FileManager.default
         
