@@ -56,5 +56,28 @@
 			</dict>
 		</array>
 	</dict>
+	<dict>
+		<key>stellarInToTheWorld</key>
+		<string></string>
+		<key>AlbumInfo</key>
+		<array>
+			<dict>
+				<key>제목</key>
+				<string>왜 때문에</string>
+				<key>시간</key>
+				<string>03:33</string>
+				<key>가수</key>
+				<string>스텔라</string>
+			</dict>
+			<dict>
+				<key>제목</key>
+				<string>TheWave</string>
+				<key>시간</key>
+				<string>03:33</string>
+				<key>가수</key>
+				<string>스텔라</string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
