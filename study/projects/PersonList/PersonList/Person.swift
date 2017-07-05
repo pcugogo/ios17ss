@@ -17,11 +17,7 @@ enum Gender:String
 struct Person {
     var name:String 
     var gender:Gender
-    var age:Int
+    var age:String
     
-    init(name: String, gender: String, age: Int) {
-        self.name = name
-        self.gender = Gender(rawValue: gender) ?? .Man
-        self.age = age
-    }
+   
 }

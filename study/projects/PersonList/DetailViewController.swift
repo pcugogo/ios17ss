@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-//    let friendLists:[[String:Any]]?
+
     var name:String?
     var age:String?
     var gender:String = ""
@@ -42,7 +42,7 @@ class DetailViewController: UIViewController {
         personList.insert(personInfo, at:0)
         
         UserDefaults.standard.set(personList, forKey: "PersonList")
-
+        
     }
     
 
@@ -62,6 +62,7 @@ class DetailViewController: UIViewController {
             
         save()
         navigationController?.popViewController(animated: true)
+            
         }else{
         edit()
         editingMode = false
